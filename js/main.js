@@ -1,13 +1,13 @@
 /* global lfmInstance, lfmUser */
 /* eslint-env jquery */
 
-document.addEventListener("DOMContentLoaded", function() {
+function renderList(theTag) {
     var lastfm = lfmInstance();
 
     lastfm.user.getPersonalTags(
         {
             user: lfmUser(),
-            tag: 'seen live',
+            tag: theTag,
             taggingtype: 'artist',
             limit: 500
         },
@@ -21,10 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     return p + '<li>' + v + '</li>';
                 }, '');
 
-            document.getElementById('main').innerHTML = '<ol>' + list + '</ol>';
+            document.getElementById('list').innerHTML = '<ol>' + list + '</ol>';
         }},
         {error: function(code, message) {
-            document.getElementById('main').innerHTML = 'Error: ' + message + ' (' + code +')';
+            document.getElementById('list').innerHTML = 'Error: ' + message + ' (' + code +')';
         }}
     );
-});
+}
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     renderList('seen live');
+// });
