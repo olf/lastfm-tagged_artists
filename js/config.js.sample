@@ -1,7 +1,8 @@
-/* exported lfmInstance */
-function lfmUser() {
-	return 'username';
-}
+/* global LastFM */
+/* exported lfmInstance, lfmDefaultUser, lfmDefaultTag */
+
+var lfmDefaultUser = 'Joe Sample User';
+var lfmDefaultTag  = 'seen live';
 
 function lfmInstance() {
     return new LastFM({

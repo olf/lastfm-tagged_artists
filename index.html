@@ -7,8 +7,9 @@
 <body style="font-family: sans-serif;">
 
 <div>
-Personal Tag: <input id="tag" type="text" name="tag" onkeyup="if (window.event.keyCode === 13) {renderList(document.getElementById('tag').value);};">
-<button onclick="renderListStub();">Lookup</button></div>
+User: <input id="user" type="text" name="user">
+Tag: <input id="tag" type="text" name="tag">
+<button onclick="showTaggedArtists()">Get Artists</button></div>
 
 <div id="list"></div>
 <script type="text/javascript" src="js/config.js"></script>
