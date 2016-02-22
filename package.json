@@ -1,0 +1,15 @@
+{
+  "name": "lastfm-tags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olaf Peters <olf@magicolf.de>",
+  "license": "ISC"
+}

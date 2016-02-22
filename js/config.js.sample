@@ -1,0 +1,11 @@
+/* exported lfmInstance */
+function lfmUser() {
+	return 'username';
+}
+
+function lfmInstance() {
+    return new LastFM({
+        'apiKey':    'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'apiSecret': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    });
+}
